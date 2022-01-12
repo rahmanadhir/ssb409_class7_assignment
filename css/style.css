@@ -1,0 +1,307 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+}
+header{
+    background-color: #f6f9f9;
+}
+.banner{
+    background-image: url(../images/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hg{
+    min-height: 90vh;
+}
+.banner h1{
+    color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.banner span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    background: #15a4fa;
+    border-radius: 30px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+.banner p{
+    color: #fff;
+}
+.btn-action{
+    border: 1px solid #15a4fa;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 7px 15px;
+    margin-top: 30px;
+}
+.btn-action:hover{
+    color: #fff;
+    background-color: #15a4fa;
+}
+.icon{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    animation: updown 1s infinite linear;
+    animation-direction: alternate;
+}
+@keyframes updown {
+    0%{
+        bottom: 15%;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+.simple{
+    padding: 50px 0px;
+    background-color: #f6f9f9
+}
+.simple h2{
+    color: #2d3950;
+}
+.simple p{
+    color: #999999;
+}
+.feature{
+    margin: 50px 0px;
+    text-align: center;
+}
+.feature_icon{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: #48baff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.feature h2{
+    color: #2d3950;
+    font-size: 22px;
+}
+.feature p{
+    color: #999999;
+    font-size: 15px;
+}
+.showcase{
+    padding: 50px 0;
+    background: #f6f9f9;  
+}
+    
+.showcase h2{
+    color: #2d3950;
+    font-size: 25px;   
+}
+    
+.showcase p{
+    color: #909090;
+    font-size: 16px;   
+}
+    
+.item{
+    position: relative;   
+}
+    
+.item::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #16a4fa;
+    left: 0%;
+    top: 0%;
+    opacity: .5;
+    transition: .4s all ease-in-out;     
+}
+    
+.item:hover::after{
+    width: 50%;  
+}
+    
+.item::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background:#16a4fa;
+    right: 0%;
+    top: 0%;
+    opacity: .5;
+    transition: .4s all ease-in-out;
+}
+    
+.item:hover::before{
+    width: 50%;
+}
+.action{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    opacity: 0;
+}
+    
+.action ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.action ul li{
+    color: #fff;
+    margin: 5px;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.item:hover .action{
+    opacity: 1;
+    transition: .4s all ease-in-out;
+}
+.submit{
+    background: transparent;
+    border: none;
+    border: 1px solid #15a4fa;
+    padding: 0px;
+    padding: 5px 30px;
+}
+.contact{
+    background-image: url(../images/contact_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+    
+.contact::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2d3951;
+    opacity: .5;
+    z-index: -1;
+}
+    
+.contact h2{
+    color: #fff; 
+}
+    
+.contact p{
+    color: #fff;
+    margin-bottom: 30px; 
+}
+    
+.submit-action{
+    float: right;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: rgb(255, 255, 255)!important;
+    border: 2px solid #16a4fa!important;
+    padding: 5px 22px!important;
+    border-radius: 3px!important;
+}
+    
+.submit-action:hover{
+    background: #16a4fa;
+}
+        
+label{
+    margin-left: 2px;
+}
+    
+.contact form input[type="checkbox"] {
+    background: #9ba1ab;
+    border: none;
+    padding: 5px;
+    outline: none;
+        
+}
+    
+.contact form input, .contact form textarea {
+    padding: 13px 15px;
+    outline: none!important;
+    border: 1px solid #999999!important;
+    color: #fff!important;
+    font-size: 16px!important;
+}
+.contact form input:focus, .contact form textarea:focus{
+    outline: 0!important;
+    border-color: #16a4fa!important;
+    box-shadow: none;
+    color: #212529;
+}
+    
+.footer{
+    padding: 20px 0;
+
+    
+}
+
+.footer p{
+    color: #999999;
+    font-size: 15px;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+}
+
+.footer ul li{
+    margin-left: 25px;
+    background: #15a4fa;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.footer ul li i{
+    color: #fff;
+    font-size: 18px;
+}
+    
